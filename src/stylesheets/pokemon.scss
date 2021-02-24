@@ -25,6 +25,13 @@
       color: white;
     }
   }
+  &__evolution {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 6px;
+    text-transform: uppercase;
+    color: #999;
+  }
 }
 .fire {
   background-color: orangered;

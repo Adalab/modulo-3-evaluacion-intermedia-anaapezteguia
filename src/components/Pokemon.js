@@ -15,6 +15,7 @@ function Pokemon(props) {
       <img className="pokemon__img" src={props.imgSrc} alt={props.name} />
       <h2 className="pokemon__name">{props.name}</h2>
       <ul className="pokemon__list">{pokemonTypes}</ul>
+      <p className="pokemon__evolution">Evol > {props.evolution}</p>
     </article>
   );
 }
