@@ -3,8 +3,12 @@ import React from "react";
 import pokemonArray from "../data/data.json";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { data: pokemonArray };
+  }
   render() {
-    console.log(pokemonArray);
+    console.log(this.state.data);
     return <div className="App">Hola mundo</div>;
   }
 }

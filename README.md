@@ -8,8 +8,6 @@ Este ejercicio está realizado con la librería React.js, especializada en crear
 
 Evalúa los conocimientos adquiridos React JS a lo largo del módulo, como pueden ser: crear una adecuada estructura de ficheros, integración de Sass, correcto uso de JSX, componentes de clase, componentes funcionales, correcto uso de props, pintar listados, uso de children, fragments, default props y propTypes, eventos, estados y React hooks.
 
-### Cómo funciona el proyecto: ---
+### Cómo funciona el proyecto: ¡Pokemon!
 
-Descripción de tareas aquí.
-
-> **NOTA:** Notas aquí.
+El ejercicio consiste en desarrollar una página web sencilla con React. La web consiste en un listado de pokemon, con una tarjeta para cada uno con información relevante, como el nombre, tipos y una imagen.
