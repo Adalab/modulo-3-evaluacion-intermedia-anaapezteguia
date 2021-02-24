@@ -12,7 +12,7 @@ class App extends React.Component {
     // console.log(this.state.data);
     return (
       <div className="App">
-        <PokeList pokemonArray={this.state.data} />
+        <PokeList pokemonArray={this.state.data} className="pokelist" />
       </div>
     );
   }

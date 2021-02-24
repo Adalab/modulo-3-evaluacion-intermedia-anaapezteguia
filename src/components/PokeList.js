@@ -1,10 +1,11 @@
+import "../stylesheets/pokelist.scss";
 import Pokemon from "./Pokemon";
 
 function PokeList(props) {
   const pokemonList = props.pokemonArray.map((pokemon) => {
     // console.log(pokemon);
     return (
-      <li key={pokemon.id} className="App__list--item">
+      <li key={pokemon.id} className="pokelist__list--item">
         <Pokemon
           name={pokemon.name}
           imgSrc={pokemon.url}
@@ -15,8 +16,8 @@ function PokeList(props) {
   });
   return (
     <>
-      <h1 className="App__title">Mi lista de pokemon</h1>
-      <ul className="App__list">{pokemonList}</ul>
+      <h1 className="pokelist__title">Mi lista de pokemon</h1>
+      <ul className="pokelist__list">{pokemonList}</ul>
     </>
   );
 }
