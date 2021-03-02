@@ -1,6 +1,9 @@
 .pokemon {
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #f4f4f4;
   &__img {
     margin: 0;
   }
@@ -50,4 +53,8 @@
 }
 .water {
   background-color: mediumturquoise;
+}
+.favorite {
+  border: 3px dotted rgb(155, 71, 240);
+  background-color: rgba(243, 226, 255, 0.5);
 }

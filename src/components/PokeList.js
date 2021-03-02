@@ -1,16 +1,19 @@
 import "../stylesheets/pokelist.scss";
 import Pokemon from "./Pokemon";
+import PropTypes from "prop-types";
 
 function PokeList(props) {
   const pokemonList = props.pokemonArray.map((pokemon) => {
-    console.log(pokemon.evolution);
+    // console.log(pokemon.id.toString());
     return (
-      <li key={pokemon.id} className="pokelist__list--item">
+      <li key={pokemon.id.toString()} className="pokelist__list--item">
         <Pokemon
+          id={pokemon.id}
           name={pokemon.name}
           imgSrc={pokemon.url}
           types={pokemon.types}
           evolution={pokemon.evolution}
+          handleFavorites={props.handleFavorites}
         />
       </li>
     );
@@ -22,5 +25,7 @@ function PokeList(props) {
     </>
   );
 }
-
+PokeList.propTypes = {
+  pokemonArray: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default PokeList;
