@@ -20,7 +20,6 @@ const App = () => {
       //lo meto en favoritos
       fav.push(clickedCreature);
       setFav([...fav]);
-      console.log(fav);
     } else {
       fav.splice(favoriteIndex, 1);
       setFav([...fav]);

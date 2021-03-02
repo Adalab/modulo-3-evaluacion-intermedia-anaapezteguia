@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 
 function PokeList(props) {
   const pokemonList = props.pokemonArray.map((pokemon) => {
-    // console.log(pokemon.id.toString());
     return (
       <li key={pokemon.id.toString()} className="pokelist__list--item">
         <Pokemon
