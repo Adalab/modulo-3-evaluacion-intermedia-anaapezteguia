@@ -19,7 +19,7 @@ function PokeList(props) {
   });
   return (
     <>
-      <h1 className="pokelist__title">Mi lista de pokemon</h1>
+      <h1 className="pokelist__title">My pokemon list</h1>
       <ul className="pokelist__list">{pokemonList}</ul>
     </>
   );
